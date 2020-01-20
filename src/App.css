@@ -1,38 +1,244 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,700");
+/*@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');*/
+/*@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');*/
+@import url("//db.onlinewebfonts.com/c/c2feba15df7a8d23e9b11f103001d7d9?family=Berthold+Akzidenz+Grotesk+BE");
+body {
+  font-family: "Work Sans", sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
+  /*font-family: 'Merriweather', serif;*/
 }
 
+hr.transparent {
+  border-color: rgb(255, 255, 255);
+  width: 100px;
+  float: left;
+  margin: 20px 0 30px 0;
+}
+
+.full {
+  width: 100%;
+  float: left;
+}
+
+.panel {
+  background-color: #000;
+}
+
+.panel-time {
+  float: right;
+  margin: 0.5em 0.5em 0.5em;
+  padding-right: 0.8em;
+  font-size: 3.5em;
+  color: white;
+}
+.span-date {
+  float: right;
+  font-size: 0.9em !important;
+  padding-bottom: 20px;
+}
+.weatherwidget {
+  float: right;
+  color: white;
+}
+#time {
+  font-size: 2em;
+  font-weight: 100;
+  font-family: "Berthold Akzidenz Grotesk BE";
+}
+.square {
+  width: 100px;
+  height: 100px;
+  color: #f57e23;
+}
+
+#background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+
+.vignette {
+  min-height: 100%;
+  background-size: cover;
+  z-index: 5;
+
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed;
+}
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logocontainer {
+  box-shadow: 1px 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-intro {
+  font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cont_princ_lists {
+  position: relative;
+  float: left;
+  width: 100%;
 }
+.monthbar {
+  position: relative;
+  font-size: 39px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 226px;
+  left: 0px;
+  color: rgb(229, 229, 229);
+  z-index: 2;
+  list-style: none;
+  transition: all 0.5s;
+}
+.monthbar h2 {
+  text-align: left !important;
+  padding-left: 0.3em;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 150px;
+  text-align: center !important;
+  width: 100%;
+  float: left;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -7px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.calendar {
+  position: relative;
+  top: 15px;
+}
+
+.col_md_1_list {
+  width: 12em;
+  position: relative;
+  float: left;
+  height: 20px;
+  top: 25%;
+  margin-top: -10px;
+}
+.col_md_1_list > p {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+.col_md_2_list {
+  width: 60em;
+  position: relative;
+  float: left;
+  padding-left: 3em;
+  margin-top: 3.5em;
+}
+.col_md_2_list > h3 {
+  text-align: left;
+  font-size: 4.5em;
+  line-height: 1.2em;
+  color: #b2b2b2;
+  font-weight: 400;
+  color: #fff;
+}
+.col_md_2_list > h4 {
+  text-align: left;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: 1.5px;
+  padding-top: 0.5em;
+  font-weight: 200;
+}
+
+.col_md_2_list > p {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  color: #999;
+}
+
+.day {
+  font-size: 2.8em;
+  font-weight: 700;
+  color: #b5b5b5;
+  padding-left: 1.3em;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  position: relative;
+  top: 1.6em;
+}
+.weekday {
+  font-size: 2.8em;
+  font-weight: 700;
+  padding-top: 0px;
+  margin-top: 0px;
+  color: #b5b5b5;
+  padding-left: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.monthday {
+  font-size: 6.8em;
+  padding-left: 0.5em;
+  margin-top: 65px;
+}
+
+.zmlogo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 800px;
+}
+
+.logos {
+  margin-top: 2em;
+}
+
+.logos > img {
+  padding: 0.8em 0.8em 0.8em 0.8em;
+  margin-bottom: 0.5em;
+  width: 120px;
+  height: auto;
+}
+
+.headerContainer {
+  position: relative;
+  padding-top: 1.9em;
+  width: 100%;
+  height: 350px;
+  background: #000;
+}
+
+.postImageContainer {
+  float: right;
+}
+ 
+.container {
+  max-width: 100%;
+}
+
