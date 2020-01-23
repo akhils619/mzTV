@@ -35,18 +35,6 @@ class Posts extends Component {
         max-width: 100%;
       `;
 
-    //     const PostDescItems = styled(ListGroup.Item)`
-    //   height: 100px;
-    //   background-color: black;
-    //   height: 100px;
-    //   color: white;
-    //   text-align: center;
-    //   font-size: 30px;
-    //   border-width: thick;
-    //   border-color: white;
-    //   margin: 5px;
-    // `;
-
         return (
             <div className='postContainer'>
                 <div className='postImageContainer'>

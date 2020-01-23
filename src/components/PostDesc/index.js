@@ -9,22 +9,22 @@ const PostDesc = (props) => {
 
     const PostDescGroup = styled(ListGroup.Item)`
     height: 100%;
-    padding:0px
+    padding: 0px;
   `;
 
-    const PostDescItems = styled(ListGroupItem)`
-    height: 200px;
-    background-color: black;
+  const PostDescItems = styled(ListGroupItem)`
+    height: 325px;
+    background: linear-gradient(#000, #0d0d0d);
     color: white;
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 5px
-    
+    font-size: 25px;
+    margin-bottom: 5px;
+    padding: 100px;
   `;
 
   const Column = styled(Col)`
-  padding: 0px;
-`;
+    padding: 0px;
+  `;
     return (
         <Column sm={4}>
             <PostDescGroup>

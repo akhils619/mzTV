@@ -15,7 +15,7 @@ const Header = () => {
                 <div className="span-date" id="time"><Clock format={'LL'} ticking={true} timezone={'America/Toronto'} /></div>
             </div>
             <div className="monthbar">
-                <h2 style = {{backgroundColor: '#0d0d0d'}}>Upcoming Events</h2>
+                <h2 className="eventsHeader">Upcoming Events</h2>
             </div>
         </div>
     )

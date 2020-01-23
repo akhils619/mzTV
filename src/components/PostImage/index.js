@@ -20,9 +20,8 @@ const PostImage = (props) => {
                             src={post.post_thumb}
                             alt="First slide"
                         />
-                        <Carousel.Caption>
-                            <h3>{post.post_cat}</h3>
-                            <p>{post.post_title}</p>
+                        <Carousel.Caption className="carouselCaption">
+                            <h3 className="carouselHeader">{post.post_cat}<br/><span>{post.post_title}</span></h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                 ))}
